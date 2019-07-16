@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Me</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+ <script src="intro.js"></script>
+<body>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+.column img:hover {
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  display: none;
+}
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+
+
+
+<h1>Me</h1>
+<h3><i>Birthplace</i></h3>
+<p> Santa Fe, New Mexico <p>
+<h3><i>Birthdate</i></h3>
+<p> June 19,2002 <p>
+<h3><i>Bio:</i></h3>
+<p>  My name is Paola A. Rosales, and I am 17 years old. I am an only<br> child, but I have a wonderful dog, that keeps me company, named Brownie.<br>
+One of the things I enjoy doing is playing video games with family<br> members, and going out to eat with my friends. Aside from this I love to travel.</p>
+
+
+
+<div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below to learn about the places I have visited:</p>
+  </div>
+<div class="row">
+  <div class="column">
+<a href="https://en.wikipedia.org/wiki/Canc%C3%BAn" target="_blank">
+    <img src="cancun1.jpg" alt="Cancun" style="width:100%"></a>
+  </div>
+  <div class="column">
+<a href="https://en.wikipedia.org/wiki/Puerto_Pe%C3%B1asco" target="_blank">    
+    <img src="pp.jpg" alt="Puerto Penasco" style="width:100%"></a>
+  </div>
+  <div class="column">
+<a href="https://en.wikipedia.org/wiki/Ensenada,_Baja_California" target="_blank">    <img src="e.jpg" alt="Ensenada" style="width:100%"></a>
+  </div>
+  <div class="column">
+<a href="https://en.wikipedia.org/wiki/San_Miguel_de_Allende" target="_blank">  
+  <img src="sm.jpg" alt="San Miguel" style="width:100%"></a>
+  </div>
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<script>
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>

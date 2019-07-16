@@ -1,0 +1,25 @@
+
+html{
+   width:800px;
+   margin:auto;
+   background-color: black;}
+body {
+   background-color: lightcyan;
+   border:double 5px;
+   padding:10px;
+   text-align: center;
+   font-family: verdana;}
+h1{
+   color:black;
+   border-bottom: solid 2px;
+   text-align: center;}
+p{
+   color:mediumpurple;}
+.caption{
+   font-size:3px;
+   font-variant: small-caps;}
+img{
+   border-radius: 8px;
+   border: solid 3px white;
+   padding: 5px;
+   text-align:center;}
